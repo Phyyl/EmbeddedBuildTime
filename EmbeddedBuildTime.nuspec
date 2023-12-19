@@ -1,7 +1,7 @@
 <package >
   <metadata>
     <id>EmbeddedBuildtime</id>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
     <description>Simple package that creates a class with a DateTime field with the time of build.</description>
     <authors>phyyl</authors>
     <license type="expression">MIT</license>
