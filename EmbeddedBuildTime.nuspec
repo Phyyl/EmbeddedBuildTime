@@ -1,0 +1,17 @@
+<package >
+  <metadata>
+    <id>EmbeddedBuildtime</id>
+    <version>1.0.0-pre9</version>
+    <description>Simple package that creates a class with a DateTime field with the time of build.</description>
+    <authors>phyyl</authors>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/phyyl/EmbeddedBuildTime</projectUrl>
+  </metadata>
+
+  <files>
+    <!-- Include the .targets file -->
+    <file src="EmbeddedBuildTime.props" target="build" />
+    <file src="EmbeddedBuildTime.targets" target="build" />
+    <file src="EmbeddedBuildTime.cs" target="contentFiles\cs\any" />
+  </files>
+</package>

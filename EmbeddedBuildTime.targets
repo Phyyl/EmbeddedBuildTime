@@ -1,0 +1,11 @@
+<Project>
+    <Target Name="Date" BeforeTargets="BeforeBuild">
+        <PropertyGroup>
+            <EmbeddedBuildTimeFile>$(IntermediateOutputPath)EmbeddedBuildtime.g.cs</EmbeddedBuildTimeFile>
+        </PropertyGroup>
+        <WriteLinesToFile File="$(EmbeddedBuildTimeFile)" Lines="internal static partial class BuildInfo { static BuildInfo() { BuildTime = new System.DateTime($([System.DateTime]::UtcNow.Ticks), System.DateTimeKind.Utc)%3B } }" Overwrite="true" />
+        <ItemGroup>
+            <Compile Include="$(EmbeddedBuildTimeFile)" />
+        </ItemGroup>
+    </Target>
+</Project>

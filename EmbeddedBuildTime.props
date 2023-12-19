@@ -1,0 +1,5 @@
+<Project>
+    <ItemGroup>
+        <Compile Update="$(MSBuildThisFileDirectory)..\contentFiles\cs\any\EmbeddedBuildTime.cs" Visible="False" />
+    </ItemGroup>
+</Project>
